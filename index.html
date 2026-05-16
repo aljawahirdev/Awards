@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>الشهادات والتكريمات | جمعية الجواهر بقمار</title>
+
+<meta name="description" content="صفحة الشهادات والتكريمات الخاصة بجمعية الجواهر بقمار لعرض شهادات الشكر والتقدير والتكريمات الرسمية." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --primary:#299E9D;
+  --primary-dark:#1F7E7D;
+  --soft:#7ED6D1;
+  --gold:#F59E0B;
+  --white:#FFFFFF;
+  --text:#222222;
+  --muted:#666666;
+  --bg:#F5F7F8;
+  --shadow:0 18px 45px rgba(41,158,157,.18);
+  --radius:28px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Noto Kufi Arabic",sans-serif;
+  line-height:1.8;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+.container{
+  width:min(1280px,calc(100% - 32px));
+  margin:auto;
+}
+
+.topbar{
+  background:var(--primary-dark);
+  color:var(--white);
+  padding:10px 0;
+  font-size:14px;
+}
+
+.topbar .container{
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+.nav{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(41,158,157,.12);
+}
+
+.nav .container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  padding:14px 0;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo{
+  width:62px;
+  height:62px;
+  border-radius:18px;
+  object-fit:cover;
+  border:2px solid rgba(41,158,157,.25);
+  background:#fff;
+}
+
+.brand h1{
+  margin:0;
+  font-size:18px;
+  line-height:1.4;
+}
+
+.brand span{
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+  font-weight:400;
+}
+
+.menu{
+  display:flex;
+  gap:22px;
+  font-weight:700;
+  font-size:15px;
+}
+
+.menu a:hover{
+  color:var(--primary);
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  border:none;
+  border-radius:999px;
+  padding:12px 24px;
+  font-family:inherit;
+  font-weight:800;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.btn-primary{
+  background:var(--primary);
+  color:#fff;
+  box-shadow:var(--shadow);
+}
+
+.btn-primary:hover{
+  background:var(--primary-dark);
+  transform:translateY(-2px);
+}
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  padding:90px 0 70px;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(126,214,209,.25), transparent 28%),
+    radial-gradient(circle at 88% 20%, rgba(245,158,11,.18), transparent 28%),
+    linear-gradient(180deg,#F8FFFF 0%,#FFFFFF 100%);
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:rgba(126,214,209,.22);
+  color:var(--primary-dark);
+  padding:8px 16px;
+  border-radius:999px;
+  font-weight:800;
+  font-size:14px;
+}
+
+.hero h2{
+  font-size:clamp(34px,5vw,62px);
+  line-height:1.3;
+  margin:18px 0;
+}
+
+.hero h2 span{
+  color:var(--primary);
+}
+
+.hero p{
+  color:var(--muted);
+  font-size:18px;
+  max-width:650px;
+}
+
+.hero-actions{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+.hero-card{
+  background:#fff;
+  border-radius:34px;
+  padding:22px;
+  box-shadow:var(--shadow);
+  border:1px solid rgba(41,158,157,.12);
+}
+
+.hero-image{
+  height:480px;
+  border-radius:28px;
+  overflow:hidden;
+  position:relative;
+  background:
+  linear-gradient(rgba(41,158,157,.18),rgba(126,214,209,.18)),
+  url('https://drive.google.com/thumbnail?id=1TE9LSnRQNudgPt34y5OOMAssaqO5Mnbh&sz=w4000') center/cover;
+}
+
+.floating-box{
+  position:absolute;
+  right:20px;
+  left:20px;
+  bottom:20px;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(12px);
+  border-radius:22px;
+  padding:18px;
+}
+
+.floating-box strong{
+  display:block;
+  color:var(--primary);
+  font-size:24px;
+  margin-bottom:6px;
+}
+
+section{
+  padding:72px 0;
+}
+
+.section-head{
+  text-align:center;
+  max-width:760px;
+  margin:0 auto 42px;
+}
+
+.section-head h3{
+  margin:10px 0 12px;
+  font-size:clamp(28px,4vw,42px);
+}
+
+.section-head p{
+  margin:0;
+  color:var(--muted);
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.certificate-card{
+  background:#fff;
+  border-radius:var(--radius);
+  overflow:hidden;
+  border:1px solid rgba(41,158,157,.12);
+  box-shadow:0 12px 30px rgba(34,34,34,.06);
+  transition:.25s;
+}
+
+.certificate-card:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow);
+}
+
+.certificate-image{
+  position:relative;
+  overflow:hidden;
+}
+
+.certificate-image img{
+  width:100%;
+  height:340px;
+  object-fit:cover;
+  cursor:pointer;
+  transition:.35s;
+}
+
+.certificate-card:hover img{
+  transform:scale(1.04);
+}
+
+.certificate-badge{
+  position:absolute;
+  top:16px;
+  right:16px;
+  background:var(--gold);
+  color:#fff;
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:800;
+}
+
+.certificate-content{
+  padding:24px;
+}
+
+.certificate-content h4{
+  margin:0 0 10px;
+  font-size:22px;
+  color:var(--primary-dark);
+}
+
+.certificate-content p{
+  margin:0;
+  color:var(--muted);
+  font-size:15px;
+}
+
+.add-section{
+  margin-top:50px;
+  background:#fff;
+  border-radius:var(--radius);
+  padding:34px;
+  border:1px solid rgba(41,158,157,.12);
+  box-shadow:var(--shadow);
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+input,
+textarea{
+  width:100%;
+  border:1px solid rgba(34,34,34,.12);
+  border-radius:18px;
+  padding:15px 18px;
+  font-family:inherit;
+  background:#FBFBFB;
+  outline:none;
+}
+
+textarea{
+  min-height:140px;
+  resize:vertical;
+}
+
+input:focus,
+textarea:focus{
+  border-color:var(--primary);
+  box-shadow:0 0 0 4px rgba(126,214,209,.22);
+}
+
+.full{
+  grid-column:1 / -1;
+}
+
+.upload-box{
+  border:2px dashed rgba(41,158,157,.35);
+  border-radius:24px;
+  padding:30px;
+  text-align:center;
+  background:rgba(126,214,209,.08);
+}
+
+.upload-box label{
+  display:block;
+  cursor:pointer;
+  font-weight:800;
+  color:var(--primary-dark);
+}
+
+.upload-box input{
+  display:none;
+}
+
+.preview-images{
+  margin-top:24px;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:18px;
+}
+
+.preview-card{
+  background:#fff;
+  border-radius:22px;
+  overflow:hidden;
+  border:1px solid rgba(41,158,157,.12);
+  box-shadow:0 10px 24px rgba(34,34,34,.05);
+}
+
+.preview-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.preview-card .txt{
+  padding:14px;
+  font-size:14px;
+  font-weight:700;
+  color:var(--primary-dark);
+}
+
+.lightbox{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.92);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  padding:20px;
+}
+
+.lightbox.active{
+  display:flex;
+}
+
+.lightbox img{
+  max-width:92%;
+  max-height:88%;
+  border-radius:18px;
+  border:3px solid var(--primary);
+}
+
+.close-lightbox{
+  position:absolute;
+  top:20px;
+  left:20px;
+  width:48px;
+  height:48px;
+  border:none;
+  border-radius:50%;
+  background:var(--gold);
+  color:#fff;
+  font-size:26px;
+  cursor:pointer;
+}
+
+footer{
+  background:#162121;
+  color:#fff;
+  padding:42px 0 18px;
+  margin-top:70px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:28px;
+  margin-bottom:24px;
+}
+
+footer h4{
+  margin-top:0;
+}
+
+footer p,
+footer a{
+  color:rgba(255,255,255,.78);
+}
+
+.copyright{
+  border-top:1px solid rgba(255,255,255,.12);
+  padding-top:18px;
+  text-align:center;
+  color:rgba(255,255,255,.65);
+  font-size:14px;
+}
+
+@media(max-width:980px){
+
+  .hero-grid,
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .menu{
+    display:none;
+  }
+
+}
+
+@media(max-width:680px){
+
+  .gallery-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding-top:55px;
+  }
+
+  .hero-image{
+    height:340px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <a href="tel:+21332233730">الهاتف: 032233730</a>
+    <a href="mailto:associationdjawahir@gmail.com">associationdjawahir@gmail.com</a>
+    <a href="https://www.facebook.com/profile.php?id=100077249114611" target="_blank">صفحتنا على فيسبوك</a>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="container">
+
+    <a href="#" class="brand">
+
+      <img
+        class="logo"
+        src="https://scontent.fogx1-1.fna.fbcdn.net/v/t39.30808-6/327352070_2989580661351512_6179979542828320358_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHb9JHku7ZSuDNWpQMw8cY3iiVEWEa9k1CKJURYRr2TUH9bCAsJ_V6KYA7P9Tpl46IxYiOOBR5SiIqLUwNUmMuv&_nc_ohc=yPoYTI3l3VEQ7kNvwFLehzC&_nc_oc=AdoVBXOXj2MyZCQDUQG_xhVAB9fVvj5dApJ9g3TlO05C9neJDsEv9CY-3G8hRB6nmP8&_nc_zt=23&_nc_ht=scontent.fogx1-1.fna&_nc_gid=hvAX_smLx-nYXZFkiCT_9A&_nc_ss=7b2a8&oh=00_Af4wdS5WXQU2FD7PeOupuCvsM-hcllxpajpczEksufVOgw&oe=6A0D6A48"
+        alt="شعار الجمعية"
+      >
+
+      <h1>
+        جمعية الجواهر بقمار
+        <span>Association Al-Djawahir Guemar</span>
+      </h1>
+
+    </a>
+
+    <nav class="menu">
+      <a href="#certificates">الشهادات</a>
+      <a href="#honors">التكريمات</a>
+      <a href="#add"></a>
+      <a href="#contact">اتصل بنا</a>
+    </nav>
+
+    
+
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <span class="eyebrow">
+        شهادات • تكريمات • إنجازات
+      </span>
+
+      <h2>
+        صفحة <span>الشهادات والتكريمات</span>
+        الخاصة بجمعية الجواهر بقمار
+      </h2>
+
+      <p>
+        توثيق رسمي لكل شهادات الشكر، التكريمات، والمشاركات
+        التي تحصلت عليها الجمعية خلال أنشطتها الإنسانية والخيرية.
+      </p>
+
+      <div class="hero-actions">
+
+       
+      
+
+      </div>
+
+    </div>
+
+    <div class="hero-card">
+
+      <div class="hero-image">
+
+        <div class="floating-box">
+
+          <strong>جمعية الجواهر بقمار</strong>
+
+          <span>
+            نفخر بكل تكريم وشهادة تقدير حصلت عليها الجمعية
+            تقديرًا لجهودها الإنسانية والخيرية.
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="certificates">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <span class="eyebrow">شهادات رسمية</span>
+
+      <h3>شهادات الشكر والتقدير</h3>
+
+      <p>
+        مجموعة من الشهادات والتكريمات الرسمية الخاصة بأنشطة الجمعية.
+      </p>
+
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+
+      <!-- شهادة -->
+      <article class="certificate-card">
+
+        <div class="certificate-image">
+
+          <span class="certificate-badge">
+            شهادة تقدير
+          </span>
+
+          <img
+            src="https://drive.google.com/thumbnail?id=1mhufbsrL8b4ovRa1ZRcmUv0mZXnIR4Nl&sz=w2000"
+            data-full="https://drive.google.com/thumbnail?id=1mhufbsrL8b4ovRa1ZRcmUv0mZXnIR4Nl&sz=w4000"
+            alt="شهادة"
+          >
+
+        </div>
+
+        <div class="certificate-content">
+
+          <h4>تكريم النشاط الإنساني</h4>
+
+          <p>
+            شهادة شكر وتقدير نظير مساهمة الجمعية في الأنشطة الإنسانية والخيرية.
+          </p>
+
+        </div>
+
+      </article>
+
+      <!-- شهادة -->
+      <article class="certificate-card">
+
+        <div class="certificate-image">
+
+          <span class="certificate-badge">
+            تكريم رسمي
+          </span>
+
+          <img
+            src="https://drive.google.com/thumbnail?id=1qusruWRKH6RooFTOjcUW7_8WUTfMWXr8&sz=w2000"
+            data-full="https://drive.google.com/thumbnail?id=1qusruWRKH6RooFTOjcUW7_8WUTfMWXr8&sz=w4000"
+            alt="تكريم"
+          >
+
+        </div>
+
+        <div class="certificate-content">
+
+          <h4>شهادة مشاركة</h4>
+
+          <p>
+            مشاركة الجمعية في المبادرات المجتمعية والأنشطة التطوعية.
+          </p>
+
+        </div>
+
+      </article>
+
+      <!-- شهادة -->
+      <article class="certificate-card">
+
+        <div class="certificate-image">
+
+          <span class="certificate-badge">
+            إنجاز
+          </span>
+
+          <img
+            src="https://drive.google.com/thumbnail?id=10-v_xO3Tc8ol_kvsgXOChZxRp0qZqtSP&sz=w2000"
+            data-full="https://drive.google.com/thumbnail?id=10-v_xO3Tc8ol_kvsgXOChZxRp0qZqtSP&sz=w4000"
+            alt="شهادة إنجاز"
+          >
+
+        </div>
+
+        <div class="certificate-content">
+
+          <h4>تكريم مجتمعي</h4>
+
+          <p>
+            تكريم خاص نظير الجهود المبذولة في خدمة المجتمع والعمل الخيري.
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+
+<div class="lightbox" id="lightbox">
+
+  <button class="close-lightbox" id="closeLightbox">
+    ×
+  </button>
+
+  <img id="lightboxImg">
+
+</div>
+
+<footer>
+
+  <div class="container footer-grid">
+
+    <div>
+
+      <h4>جمعية الجواهر بقمار</h4>
+
+      <p>
+        جمعية خيرية وإنسانية لخدمة المجتمع عبر مبادرات التضامن والصحة والعمل التطوعي.
+      </p>
+
+    </div>
+
+    <div>
+
+      <h4>روابط سريعة</h4>
+
+      <p><a href="#certificates">الشهادات</a></p>
+      <p><a href="#honors">التكريمات</a></p>
+      <p><a href="#add">إضافة صور</a></p>
+
+    </div>
+
+    <div>
+
+      <h4>التواصل</h4>
+
+      <p>032233730</p>
+      <p>associationdjawahir@gmail.com</p>
+
+    </div>
+
+  </div>
+
+  <div class="container copyright">
+    جميع الحقوق محفوظة © جمعية الجواهر بقمار
+    <span id="year"></span>
+  </div>
+
+</footer>
+
+<script>
+
+document.getElementById('year').textContent =
+new Date().getFullYear();
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+
+document.addEventListener('click', function(e){
+
+  if(e.target.matches('.certificate-image img')){
+
+    lightbox.classList.add('active');
+    lightboxImg.src = e.target.dataset.full || e.target.src;
+    document.body.style.overflow = 'hidden';
+
+  }
+
+});
+
+document.getElementById('closeLightbox').onclick = () => {
+
+  lightbox.classList.remove('active');
+  document.body.style.overflow = 'auto';
+
+};
+
+lightbox.onclick = (e) => {
+
+  if(e.target === lightbox){
+
+    lightbox.classList.remove('active');
+    document.body.style.overflow = 'auto';
+
+  }
+
+};
+
+const imageInput = document.getElementById('imageInput');
+const previewImages = document.getElementById('previewImages');
+const galleryGrid = document.getElementById('galleryGrid');
+
+imageInput.addEventListener('change', function(){
+
+  const files = [...this.files];
+
+  files.forEach(file => {
+
+    const reader = new FileReader();
+
+    reader.onload = function(e){
+
+      const imageURL = e.target.result;
+
+      // عرض معاينة
+      const preview = document.createElement('div');
+
+      preview.className = 'preview-card';
+
+      preview.innerHTML = `
+        <img src="${imageURL}">
+        <div class="txt">
+          تمت إضافة الصورة بنجاح
+        </div>
+      `;
+
+      previewImages.appendChild(preview);
+
+      // إضافة للمعرض
+      const card = document.createElement('article');
+
+      card.className = 'certificate-card';
+
+      card.innerHTML = `
+
+        <div class="certificate-image">
+
+          <span class="certificate-badge">
+            ${document.getElementById('badgeInput').value || 'شهادة'}
+          </span>
+
+          <img
+            src="${imageURL}"
+            data-full="${imageURL}"
+            alt="شهادة جديدة"
+          >
+
+        </div>
+
+        <div class="certificate-content">
+
+          <h4>
+            ${document.getElementById('titleInput').value || 'شهادة جديدة'}
+          </h4>
+
+          <p>
+            ${document.getElementById('descInput').value || 'تمت إضافة شهادة جديدة إلى المعرض.'}
+          </p>
+
+        </div>
+
+      `;
+
+      galleryGrid.prepend(card);
+
+    };
+
+    reader.readAsDataURL(file);
+
+  });
+
+});
+
+</script>
+
+</body>
+</html>
